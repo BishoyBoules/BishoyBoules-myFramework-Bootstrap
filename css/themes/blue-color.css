@@ -65,7 +65,8 @@ a,
 .blog-card-content h5,
 .error,
 .terms .terms-content .container,
-.partners h1 {
+.partners h1,
+.copyrights .copyrights-terms a {
     color: var(--secondary-color);
 }
 

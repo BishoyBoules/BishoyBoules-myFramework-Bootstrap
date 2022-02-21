@@ -28,7 +28,7 @@
 <body id="body">
     <!-- start switch style buttons -->
     <div class="switch-style">
-        <div class="switch-style-buttons">
+        <div class="switch-style-buttons d-flex flex-column justify-content-center">
             <button onclick="colorChange(id)" id="red-color">Red</button>
             <button onclick="colorChange(id)" id="blue-color">Blue</button>
             <button onclick="colorChange(id)" id="green-color">Green</button>
@@ -38,11 +38,11 @@
     <!-- end switch style buttons -->
     <!-- start navbar -->
     <nav class="navbar">
-        <div class="container d-flex justify-content-between">
+        <div class="container">
             <div class="mail">
                 mail: <a href="mailto:mymail@abc.com" target="_blank">mymail@abc.com</a>
             </div>
-            <div class="social">
+            <div class="social d-flex justify-content-between">
                 <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -52,17 +52,17 @@
     <!-- end navbar -->
     <!-- start header -->
     <div class="header">
-        <div class="container d-flex justify-content-between">
-            <div class="logo">
+        <div class="container d-flex justify-content-between pt-2 px-0">
+            <div class="logo col d-flex justify-content-between">
                 <img src="images/NWL_Insurance.png" alt="">
             </div>
-            <div class="header-links">
+            <div class="header-links col d-flex justify-content-between">
                 <span class="icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="mb-2"></span>
+                    <span class="mb-2"></span>
+                    <span class="mb-2"></span>
                 </span>
-                <ul class="list ">
+                <ul class="list d-flex justify-content-between pt-2">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#service">Service</a></li>
@@ -82,7 +82,7 @@
     <!-- end home -->
     <!-- start about -->
     <div class="about" id="about">
-        <div>
+        <div class="mb-4">
             <h1>About us</h1>
         </div>
         <div class="container d-flex justify-content-between">
@@ -109,17 +109,17 @@
     <!-- end about -->
     <!-- start service -->
     <div class="service" id="service">
-        <div>
+        <div class="mb-4">
             <h1>Our Services</h1>
         </div>
-        <div class="container d-flex justify-content-between">
-            <div class="col">
-                <div class="service-item">
+        <div class="d-flex flex-column justify-content-between">
+            <div class="container d-flex justify-content-between">
+                <div class="service-item col d-flex flex-column justify-content-between">
                     <div class="service-image">
                         <img src="images/teams1.png" alt="">
                     </div>
                     <div class="col-body">
-                        <h3 class="title">First</h3>
+                        <h3 class="mt-2 title">First</h3>
                         <p class="item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
                             corrupti
                             dolorum eos
@@ -128,14 +128,12 @@
                         <button class="secondary-button">Read More</button>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="service-item">
+                <div class="service-item col d-flex flex-column justify-content-between">
                     <div class="service-image">
                         <img src="images/teams2.png" alt="">
                     </div>
                     <div class="col-body">
-                        <h3 class="title">Second</h3>
+                        <h3 class="mt-2 title">Second</h3>
                         <p class="item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
                             corrupti
                             dolorum eos
@@ -144,14 +142,12 @@
                         <button class="secondary-button">Read More</button>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="service-item">
+                <div class="service-item col d-flex flex-column justify-content-between">
                     <div class="service-image">
                         <img src="images/teams3.png" alt="">
                     </div>
                     <div class="col-body">
-                        <h3 class="title">Third</h3>
+                        <h3 class="mt-2 title">Third</h3>
                         <p class="item-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
                             corrupti
                             dolorum eos
@@ -161,75 +157,77 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="btn">
-            <button class="primary-button" onclick="location.href='services.html';">Read More</button>
+            <div class="btn">
+                <button class="primary-button" onclick="location.href='services.html';">Read More</button>
+            </div>
         </div>
     </div>
     <hr>
     <!-- end service -->
     <!-- start blog -->
     <div class="blog" id="blog">
-        <div class="blog-header">
+        <div class="blog-header mb-4">
             <h1>Blog</h1>
         </div>
-        <div class="container d-flex justify-content-between">
-            <div class="blog-card">
-                <div class="blog-image">
-                    <a href="#">
-                        <img src="images/blog1.jpeg" alt="">
-                        <p>February 15, 2022 </p>
-                    </a>
+        <div class="d-flex flex-column justify-content-between">
+            <div class="container d-flex justify-content-between">
+                <div class="blog-card">
+                    <div class="blog-image mb-5">
+                        <a href="#">
+                            <img src="images/blog1.jpeg" alt="">
+                            <p>February 15, 2022 </p>
+                        </a>
+                    </div>
+                    <div class="blog-card-content">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                    </div>
+                    <div class="blog-card-link">
+                        <a href="#">READ MORE</a>
+                    </div>
                 </div>
-                <div class="blog-card-content">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                <div class="blog-card">
+                    <div class="blog-image mb-5">
+                        <a href="#">
+                            <img src="images/blog2.jpeg" alt="">
+                            <p>March 01, 2022 </p>
+                        </a>
+                    </div>
+                    <div class="blog-card-content">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                    </div>
+                    <div class="blog-card-link">
+                        <a href="#">READ MORE</a>
+                    </div>
                 </div>
-                <div class="blog-card-link">
-                    <a href="#">READ MORE</a>
+                <div class="blog-card">
+                    <div class="blog-image mb-5">
+                        <a href="#">
+                            <img src="images/blog3.jpeg" alt="">
+                            <p>April 12, 2022 </p>
+                        </a>
+                    </div>
+                    <div class="blog-card-content">
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                    </div>
+                    <div class="blog-card-link">
+                        <a href="#">READ MORE</a>
+                    </div>
                 </div>
             </div>
-            <div class="blog-card">
-                <div class="blog-image">
-                    <a href="#">
-                        <img src="images/blog2.jpeg" alt="">
-                        <p>March 01, 2022 </p>
-                    </a>
-                </div>
-                <div class="blog-card-content">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
-                </div>
-                <div class="blog-card-link">
-                    <a href="#">READ MORE</a>
-                </div>
+            <div class="btn">
+                <button class="btn primary-button" onclick="location.href='blog.html';">Read More</button>
             </div>
-            <div class="blog-card">
-                <div class="blog-image">
-                    <a href="#">
-                        <img src="images/blog3.jpeg" alt="">
-                        <p>April 12, 2022 </p>
-                    </a>
-                </div>
-                <div class="blog-card-content">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
-                </div>
-                <div class="blog-card-link">
-                    <a href="#">READ MORE</a>
-                </div>
-            </div>
-        </div>
-        <div class="btn">
-            <button class="primary-button" onclick="location.href='blog.html';">Read More</button>
         </div>
     </div>
     <!-- END blog -->
     <!-- start contact -->
-    <div class="contact" id="contact">
-        <div class="contact-header">
+    <div class="contact pb-5 mb-3" id="contact">
+        <div class="contact-header mb-4">
             <h1>Contact us</h1>
         </div>
-        <div class="container d-flex justify-content-between">
+        <div class="container d-flex justify-content-between mb-5">
             <div class="col">
-                <div class="contact-info">
+                <div class="contact-info d-flex flex-column justify-content-between">
                     <div class="contact-item">
                         <h3>Phone</h3>
                         <p>+201001010101</p>
@@ -255,7 +253,7 @@
             </div>
 
             <div class="col">
-                <div class="form">
+                <div class="form d-flex flex-column justify-content-between">
                     <label for="">Full Name</label>
                     <input type="text" placeholder="Full name" title="Full Name">
                     <label for="">Email</label>
@@ -273,36 +271,54 @@
     <!-- start footer -->
     <div class="footer">
         <div class="container d-flex justify-content-between">
-            <div class="col">
-                <img src="images/NWL_Insurance.png" alt="">
-                <h3>About us</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
-            </div>
-            <div class="col">
-                <div class="hot-links">
-                    <h3>Hot Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Services</a></li>
-                    </ul>
+            <div class="col d-flex flex-column justify-content-between">
+                <div>
+                    <img src="images/NWL_Insurance.png" alt="">
+                </div>
+                <div>
+                    <h3>About us</h3>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, velit.</p>
                 </div>
             </div>
             <div class="col">
-                <h3>Follow us</h3>
-                <div class="col2">
-                    <div class="footer-links">
+                <div class="hot-links d-flex flex-column justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <h3>Hot Links</h3>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex flex-column justify-content-center">
+                <div class="footer-subtitle d-flex justify-content-center">
+                    <h3>Follow us</h3>
+                </div>
+                <div class="col2 d-flex flex-column justify-content-center">
+                    <div class="footer-links d-flex justify-content-around">
                         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
-                    <div class="and">
-                        <i class="far fa-window-minimize"></i>
-                        and
-                        <i class="far fa-window-minimize"></i>
+                    <div class="and d-flex justify-content-between">
+                        <div class="col">
+                            <i class="far fa-window-minimize"></i>
+                        </div>
+                        <div class="col">
+                            and
+                        </div>
+                        <div class="col">
+                            <i class="far fa-window-minimize"></i>
+                        </div>
                     </div>
-                    <div class="subscribe">
+                    <div class="subscribe d-flex justify-content-between">
                         <input type="text" title="email" placeholder="Enter Your Email">
                         <button class="subscribe-button primary-button" type="submit" title="Subscribe us">Subscribe
                             us</button>
@@ -314,12 +330,12 @@
     <!-- end footer -->
     <!-- start copyrights -->
     <div class="copyrights">
-        <div class="container d-flex justify-content-between">
+        <div class="container d-flex justify-content-between pt-3">
             <div class="col">
                 <i class="far fa-copyright"></i>
                 copyrights Saved @2022
             </div>
-            <div class="col">
+            <div class="col d-flex justify-content-end m-0 copyrights-terms">
                 <a href="terms.html">Privacy - Terms&Conditions</a>
             </div>
         </div>

@@ -31,7 +31,8 @@ a {
 .header .header-links ul a,
 .copyrights,
 .copyrights .container .col i,
-.copyrights .container .col {
+.copyrights .container .col,
+.copyrights .copyrights-terms a {
     color: var(--main-color);
 }
 
